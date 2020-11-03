@@ -1,0 +1,19 @@
+﻿<Application
+    x:Class="CornerRadiusResourceTest.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CornerRadiusResourceTest">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Uncommenting the below should effect the corner radius of all controls defined in the app
+                <CornerRadius x:Key="OverlayCornerRadius">0, 0, 0, 0</CornerRadius>
+                <CornerRadius x:Key="ControlCorneRadius">0, 0, 0, 0</CornerRadius>
+            -->
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

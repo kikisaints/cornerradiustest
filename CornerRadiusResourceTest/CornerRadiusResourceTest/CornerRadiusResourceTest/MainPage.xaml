@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="CornerRadiusResourceTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CornerRadiusResourceTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <!-- This overlay should affect the edges of the content dialog -->
+        <CornerRadius x:Key="OverlayCornerRadius">0, 0, 0, 0</CornerRadius>
+        <!-- This control should affect the edges of the button in the stackpanel, and the button in the content dialog -->
+        <CornerRadius x:Key="ControlCorneRadius">0, 0, 0, 0</CornerRadius>
+    </Page.Resources>
+
+    <StackPanel Spacing="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="dialogbtn" 
+                Click="dialogbtn_Click"
+                Content="Show Content Dialog">
+            <Button.Resources>
+                <CornerRadius x:Key="ControlCorneRadius">0, 0, 0, 0</CornerRadius>
+            </Button.Resources>
+        </Button>
+        
+    </StackPanel>
+</Page>

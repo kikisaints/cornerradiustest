@@ -1,0 +1,1 @@
+D:\Projects\GitHub\CornerRadiusResourceTest\CornerRadiusResourceTest\CornerRadiusResourceTest\CornerRadiusResourceTest.csproj;x86
